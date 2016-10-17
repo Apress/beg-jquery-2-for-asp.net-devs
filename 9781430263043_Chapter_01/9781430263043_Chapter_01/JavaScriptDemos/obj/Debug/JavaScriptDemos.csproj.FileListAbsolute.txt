@@ -1,0 +1,6 @@
+E:\Bipin\jQuery Book\9781430263043_Chapter_01\JavaScriptDemos\bin\JavaScriptDemos.dll.config
+E:\Bipin\jQuery Book\9781430263043_Chapter_01\JavaScriptDemos\bin\JavaScriptDemos.dll
+E:\Bipin\jQuery Book\9781430263043_Chapter_01\JavaScriptDemos\bin\JavaScriptDemos.pdb
+E:\Bipin\jQuery Book\9781430263043_Chapter_01\JavaScriptDemos\obj\Debug\JavaScriptDemos.dll
+E:\Bipin\jQuery Book\9781430263043_Chapter_01\JavaScriptDemos\obj\Debug\JavaScriptDemos.pdb
+E:\Bipin\jQuery Book\9781430263043_Chapter_01\JavaScriptDemos\obj\Debug\JavaScriptDemos.csprojResolveAssemblyReference.cache

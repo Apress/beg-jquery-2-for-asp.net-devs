@@ -1,0 +1,50 @@
+﻿body {
+    padding:10px;
+    font-size:16px;
+    margin-top:20px;
+}
+
+.menu { 
+    border: thin solid #808080; 
+    width:150px;
+    padding:10px;
+    background-color: #C0C0C0; 
+    list-style-type: none; 
+    position:absolute;
+}
+
+li {
+    padding:5px;
+    font-weight:bold;
+}
+
+.highlightedMenuItem {
+    color:#f00;
+}
+
+.highlightedTextArea {
+    background-color:#ffd800;
+    color:#f00;
+    font-weight:bold;
+}
+
+.highlightedRow {
+    background-color: #800000;
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+.boldRow {
+    color:red;
+    font-weight:bold;
+}
+
+.italicRow {
+    color:red;
+    font-style: italic;
+}
+
+.underlineRow {
+    color:red;
+    text-decoration: underline;
+}

@@ -1,0 +1,51 @@
+﻿@model List<AjaxPagingDemo.Models.Employee>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>IndexSorted</title>
+    <script src="../../Scripts/jquery-2.0.3.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("th").click(function () {
+                var columnIndex = $(this).index();
+                var tdArray = $(this).closest("table")
+                                .find("tr td:nth-child(" + (columnIndex + 1) + ")");
+
+                tdArray.sort(function (p, n) {
+                    var pData = $(p).text();
+                    var nData = $(n).text();
+                    return pData < nData ? -1 : 1;
+                });
+
+                tdArray.each(function () {
+                    var row = $(this).parent();
+                    $("#tblGrid").append(row);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <table id="tblGrid" border="1" cellpadding="10">
+        <tr>
+            <th>EmployeeID</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+        </tr>
+        @foreach(var emp in Model){
+        <tr>
+            <td>@emp.EmployeeID</td>
+            <td>@emp.FirstName</td>
+            <td>@emp.LastName</td>
+        </tr>
+        }
+    </table>
+</body>
+</html>

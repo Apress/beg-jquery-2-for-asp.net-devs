@@ -1,0 +1,80 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="../../Scripts/jquery-2.0.3.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#message").css("color", "red");
+
+            $("input:submit").click(function (evt) {
+                $("input:text").each(function () {
+                    if ($(this).val() == "") {
+                        $(this).css("border", "1px solid red");
+                        $("#message").append("<li>Please fill in " + $(this).attr("name") + " field.</li>");
+                        evt.preventDefault();
+                    }
+                    else {
+                        $(this).css("border-width", "0px");
+                    }
+                });
+
+                if ($(":selected").val() == "Please select") {
+                    $("select").css("border", "1px solid red");
+                    $("#message").append("<li>Please select a reason for contacting us.</li>");
+                    evt.preventDefault();
+                }
+                else {
+                    $("select").css("border-width", "0px");
+                }
+
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    @using(Html.BeginForm("ProcessForm","Home",FormMethod.Post)){
+    <table>
+        <tr>
+            <td>@Html.Label("FirstName")</td>
+            <td>@Html.TextBox("FirstName")</td>
+        </tr>
+        <tr>
+            <td>@Html.Label("LastName")</td>
+            <td>@Html.TextBox("LastName")</td>
+        </tr>
+        <tr>
+            <td>@Html.Label("Email")</td>
+            <td>@Html.TextBox("Email")</td>
+        </tr>
+        <tr>
+            <td>@Html.Label("Subject")</td>
+            <td>@Html.TextBox("Subject")</td>
+        </tr>
+        <tr>
+            <td>@Html.Label("Message")</td>
+            <td>@Html.TextArea("Message")</td>
+        </tr>
+        <tr>
+            <td>@Html.Label("Reason")</td>
+            <td>@Html.DropDownList("Reason")</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Send" />
+                <ul id="message"></ul>
+            </td>
+        </tr>
+
+    </table>
+    }
+</body>
+</html>

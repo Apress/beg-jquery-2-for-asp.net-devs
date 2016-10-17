@@ -1,0 +1,17 @@
+﻿body {
+}
+
+.Highlight {
+    background-color:navy;
+    color:white;
+    font-weight:bold;
+}
+
+
+.Row {
+    background-color:silver;
+}
+
+.AlternateRow {
+    background-color:white;
+}

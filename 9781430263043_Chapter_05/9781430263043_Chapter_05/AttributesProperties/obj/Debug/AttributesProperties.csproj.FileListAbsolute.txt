@@ -1,0 +1,6 @@
+E:\Bipin\jQuery Book\9781430263043_Chapter_05\AttributesProperties\bin\AttributesProperties.dll.config
+E:\Bipin\jQuery Book\9781430263043_Chapter_05\AttributesProperties\bin\AttributesProperties.dll
+E:\Bipin\jQuery Book\9781430263043_Chapter_05\AttributesProperties\bin\AttributesProperties.pdb
+E:\Bipin\jQuery Book\9781430263043_Chapter_05\AttributesProperties\obj\Debug\AttributesProperties.csprojResolveAssemblyReference.cache
+E:\Bipin\jQuery Book\9781430263043_Chapter_05\AttributesProperties\obj\Debug\AttributesProperties.dll
+E:\Bipin\jQuery Book\9781430263043_Chapter_05\AttributesProperties\obj\Debug\AttributesProperties.pdb

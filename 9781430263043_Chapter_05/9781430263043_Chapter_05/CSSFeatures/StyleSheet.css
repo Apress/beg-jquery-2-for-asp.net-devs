@@ -1,0 +1,30 @@
+﻿body {
+}
+
+.dialogBackground {
+    background-color:rgba(0, 0, 0,0.7);
+    opacity:0.5;
+    position:fixed;
+    left:0;
+    top:0;
+    
+}
+
+.dialogVisible {
+    opacity:1;
+    position:fixed;
+    border:5px solid #ff6a00;
+    background-color:white;
+    font-weight:bold;
+    padding:30px;
+}
+
+.dialogHidden {
+    display:none;
+}
+
+.MyClass {
+    width:200px;
+    height:200px;
+    background-color:red;
+}

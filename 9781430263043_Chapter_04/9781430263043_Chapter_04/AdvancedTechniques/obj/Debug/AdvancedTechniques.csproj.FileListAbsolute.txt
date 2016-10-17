@@ -1,0 +1,5 @@
+E:\Bipin\jQuery Book\9781430263043_Chapter_04\AdvancedTechniques\bin\AdvancedTechniques.dll.config
+E:\Bipin\jQuery Book\9781430263043_Chapter_04\AdvancedTechniques\bin\AdvancedTechniques.dll
+E:\Bipin\jQuery Book\9781430263043_Chapter_04\AdvancedTechniques\bin\AdvancedTechniques.pdb
+E:\Bipin\jQuery Book\9781430263043_Chapter_04\AdvancedTechniques\obj\Debug\AdvancedTechniques.dll
+E:\Bipin\jQuery Book\9781430263043_Chapter_04\AdvancedTechniques\obj\Debug\AdvancedTechniques.pdb

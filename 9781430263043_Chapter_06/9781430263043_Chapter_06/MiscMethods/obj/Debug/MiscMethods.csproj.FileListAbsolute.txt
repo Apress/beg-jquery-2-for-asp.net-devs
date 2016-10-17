@@ -1,0 +1,5 @@
+E:\Bipin\jQuery Book\9781430263043_Chapter_06\MiscMethods\bin\MiscMethods.dll.config
+E:\Bipin\jQuery Book\9781430263043_Chapter_06\MiscMethods\bin\MiscMethods.dll
+E:\Bipin\jQuery Book\9781430263043_Chapter_06\MiscMethods\bin\MiscMethods.pdb
+E:\Bipin\jQuery Book\9781430263043_Chapter_06\MiscMethods\obj\Debug\MiscMethods.dll
+E:\Bipin\jQuery Book\9781430263043_Chapter_06\MiscMethods\obj\Debug\MiscMethods.pdb

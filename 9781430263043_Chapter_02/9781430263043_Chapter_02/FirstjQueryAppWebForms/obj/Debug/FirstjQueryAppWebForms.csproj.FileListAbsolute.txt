@@ -1,0 +1,5 @@
+E:\Bipin\jQuery Book\9781430263043_Chapter_02\FirstjQueryAppWebForms\bin\FirstjQueryAppWebForms.dll.config
+E:\Bipin\jQuery Book\9781430263043_Chapter_02\FirstjQueryAppWebForms\bin\FirstjQueryAppWebForms.dll
+E:\Bipin\jQuery Book\9781430263043_Chapter_02\FirstjQueryAppWebForms\bin\FirstjQueryAppWebForms.pdb
+E:\Bipin\jQuery Book\9781430263043_Chapter_02\FirstjQueryAppWebForms\obj\Debug\FirstjQueryAppWebForms.dll
+E:\Bipin\jQuery Book\9781430263043_Chapter_02\FirstjQueryAppWebForms\obj\Debug\FirstjQueryAppWebForms.pdb

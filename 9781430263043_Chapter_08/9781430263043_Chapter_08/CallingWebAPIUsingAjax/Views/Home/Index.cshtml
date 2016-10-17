@@ -1,0 +1,148 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="../../Scripts/jquery-2.0.3.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var options = {
+                url: "/api/Employees",
+                type: "GET",
+                contentType: "application/json",
+                dataType: "json"
+            };
+
+            $.ajax(options).done(function (employees) {
+                for (var i = 0; i < employees.length; i++) {
+                    $("#ddlEmployeeID").append("<option>" + employees[i].EmployeeID + "</option>");
+                }
+            }).fail(function (jqXHR, status, err) {
+                $("#lblMessage").html(err);
+            });
+
+
+            $("#ddlEmployeeID").change(function () {
+                options.url = "/api/Employees/" + $("#ddlEmployeeID").val();
+                options.type = "GET";
+
+                $.ajax(options).done(function (employee) {
+                    $("#FirstName").val(employee.FirstName);
+                    $("#LastName").val(employee.LastName);
+                    $("#BirthDate").val(employee.BirthDate.substring(0, 10));
+                    $("#HireDate").val(employee.HireDate.substring(0, 10));
+                    $("#Country").val(employee.Country);
+                }).fail(function (jqXHR, status, err) {
+                    $("#lblMessage").html(err);
+                });
+            });
+
+
+
+            $("#btnInsert").click(function () {
+                var employee = {};
+                employee.EmployeeID = $("#EmployeeID").val();
+                employee.FirstName = $("#FirstName").val();
+                employee.LastName = $("#LastName").val();
+                employee.BirthDate = $("#BirthDate").val();
+                employee.HireDate = $("#HireDate").val();
+                employee.Country = $("#Country").val();
+
+                options.url = "/api/Employees";
+                options.type = "POST";
+                options.data = JSON.stringify(employee);
+
+                $.ajax(options).done(function (result) {
+                    $("#lblMessage").html(result);
+                }).fail(function (jqXHR, status, err) {
+                    $("#lblMessage").html(err);
+                });
+            });
+
+            $("#btnUpdate").click(function () {
+                var employee = {};
+                employee.FirstName = $("#FirstName").val();
+                employee.LastName = $("#LastName").val();
+                employee.BirthDate = $("#BirthDate").val();
+                employee.HireDate = $("#HireDate").val();
+                employee.Country = $("#Country").val();
+
+                options.url = "/api/Employees/" + $("#ddlEmployeeID").val();
+                options.type = "PUT";
+                options.data = JSON.stringify(employee);
+
+                $.ajax(options).done(function (result) {
+                    $("#lblMessage").html(result);
+                }).fail(function (jqXHR, status, err) {
+                    $("#lblMessage").html(err);
+                });
+            });
+
+            $("#btnDelete").click(function () {
+                options.url = "/api/Employees/" + $("#ddlEmployeeID").val();
+                options.type = "DELETE";
+                options.data = "";
+
+                $.ajax(options).done(function (result) {
+                    $("#lblMessage").html(result);
+                }).fail(function (jqXHR, status, err) {
+                    $("#lblMessage").html(err);
+                });
+            });
+
+
+        });
+    </script>
+</head>
+<body>
+    <form method="post">
+        <table border="1" cellpadding="6">
+            <tr>
+                <td>@Html.Label("EmployeeID","EmployeeID :")</td>
+                <td>
+                    <select id="ddlEmployeeID"></select>
+                    OR
+                    @Html.TextBox("EmployeeID","", new { size="5" })
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.Label("FirstName","First Name :")</td>
+                <td>@Html.TextBox("FirstName")</td>
+            </tr>
+            <tr>
+                <td>@Html.Label("LastName","Last Name :")</td>
+                <td>@Html.TextBox("LastName")</td>
+            </tr>
+            <tr>
+                <td>@Html.Label("BirthDate","Birth Date :")</td>
+                <td>@Html.TextBox("BirthDate", "", new { type="date" })</td>
+            </tr>
+            <tr>
+                <td>@Html.Label("HireDate","Hire Date :")</td>
+                <td>@Html.TextBox("HireDate", "", new { type="Date" })</td>
+            </tr>
+            <tr>
+                <td>@Html.Label("Country","Country :")</td>
+                <td>@Html.TextBox("Country")</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input id="btnInsert" type="button" value="Insert" />
+                    <input id="btnUpdate" type="button" value="Update" />
+                    <input id="btnDelete" type="button" value="Delete" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <span id="lblMessage"></span>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

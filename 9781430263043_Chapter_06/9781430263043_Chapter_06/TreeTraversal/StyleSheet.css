@@ -1,0 +1,65 @@
+﻿.Highlight {
+    background-color:navy;
+    color:white;
+}
+
+.Error {
+    border:2px solid red;
+}
+
+
+.ErrorCell {
+    background-color:#cec5c5;
+}
+
+
+.EditCell {
+    background-color:#ffd800;
+}
+
+
+.NonEditableRow {
+    background-color:rgba(0, 0, 0,0.5);
+    opacity:0.5;
+}
+
+
+.Notes {
+    overflow:auto;
+    width:250px;
+    height:90px;
+}
+
+.HighlightCountry {
+    background-color:red;
+    color:white;
+    font-weight:bold;
+}
+
+.InfoPanel {
+    border:2px solid rgb(128, 128, 128);
+    background-color:#cec5c5;
+    font-weight:bold;
+    padding:10px;
+}
+
+
+.HeaderRow {
+    background-color:navy;
+    color:white;
+    font-weight:bold;
+}
+
+
+.Header {
+    background-color:navy;
+    color:white;
+    font-weight:bold;
+}
+
+
+.Footer {
+    background-color:#ff6a00;
+    color:#4e0909;
+    font-weight:bold;
+}

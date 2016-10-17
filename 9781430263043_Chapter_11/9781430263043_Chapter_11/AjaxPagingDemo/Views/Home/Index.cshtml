@@ -1,0 +1,92 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="../../Scripts/jquery-2.0.3.js"></script>
+    <script type="text/javascript">
+        var pageSize = 3;
+        var pageCount = 0;
+
+        $(document).ready(function () {
+            var options = {};
+            options.url = "home/gettotalrows";
+            options.type = "POST";
+            options.dataType = "json";
+            options.contentType = "application/json";
+            options.success = function (count) {
+                pageCount = count / pageSize;
+                renderPager(0);
+                getPageData(0);
+            };
+            options.error = function (xhr, status, err) { alert(err); };
+            $.ajax(options);
+
+        });
+
+        function renderPager(currentPageIndex) {
+            var html = '';
+
+            for (var i = 0; i < pageCount; i++) {
+                if (i == currentPageIndex) {
+                    html += "<span>" + (i + 1) + "</span>&nbsp;";
+                }
+                else {
+                    html += "<a href='#' data-page-index='" + i + "'>" + (i + 1) + "</a>&nbsp;";
+                }
+            }
+            $("#tblGrid tr:last td").html(html);
+            $("a").click(function (evt) {
+                var pageIndex = $(this).data("pageIndex");
+                getPageData(pageIndex);
+                evt.preventDefault();
+            });
+        }
+
+        function getPageData(index) {
+            var options = {};
+            options.url = "home/getpagedata";
+            options.type = "POST";
+            options.data = JSON.stringify({ pageIndex: index, pageSize: this.pageSize });
+            options.dataType = "json";
+            options.contentType = "application/json";
+            options.success = function (employees) {
+                $("#tblGrid").find("tr:gt(0)").remove("tr:not(:last)");
+                for (var i = 0; i < employees.length; i++) {
+                    var html = "<tr>";
+                    html += "<td>" + employees[i].EmployeeID + "</td>";
+                    html += "<td>" + employees[i].FirstName + "</td>";
+                    html += "<td>" + employees[i].LastName + "</td>";
+                    html += "<td>" + employees[i].Title + "</td>";
+                    html += "<td>" + employees[i].Country + "</td>";
+                    html += "</tr>";
+                    $("#tblGrid tr").eq(i).after(html);
+                    renderPager(index);
+                }
+            };
+            options.error = function (xhr, status, err) { alert(err); };
+            $.ajax(options);
+        }
+
+    </script>
+</head>
+<body>
+    <table id="tblGrid" border="1" cellpadding="10">
+        <tr>
+            <th>EmployeeID</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Title</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td colspan="5"></td>
+        </tr>
+    </table>
+</body>
+</html>

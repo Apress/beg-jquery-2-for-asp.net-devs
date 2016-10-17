@@ -1,0 +1,33 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    
+    <script src='@Url.Content("~/Scripts/jquery-2.0.3.js")'></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $("#Button1").click(function (evt) {
+                $("#container").load("/home/getemployeetable", function () {
+                    $("#container").css("font-family", "Arial");
+                    $("#container").css("font-size", "20px");
+                    $("#container td").css("padding", "6px");
+                    alert("Employee data loaded successfully!");
+                });
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <input type="button" id="Button1" value="Get Employee Data" />
+    <br /><br />
+    <div id="container"></div>
+</body>
+</html>

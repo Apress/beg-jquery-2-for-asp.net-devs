@@ -1,0 +1,10 @@
+E:\Bipin\jQuery Book\9781430263043_Chapter_10\jQueryUIDemo\bin\jQueryUIDemo.dll.config
+E:\Bipin\jQuery Book\9781430263043_Chapter_10\jQueryUIDemo\bin\jQueryUIDemo.dll
+E:\Bipin\jQuery Book\9781430263043_Chapter_10\jQueryUIDemo\bin\jQueryUIDemo.pdb
+E:\Bipin\jQuery Book\9781430263043_Chapter_10\jQueryUIDemo\bin\EntityFramework.dll
+E:\Bipin\jQuery Book\9781430263043_Chapter_10\jQueryUIDemo\bin\EntityFramework.SqlServer.dll
+E:\Bipin\jQuery Book\9781430263043_Chapter_10\jQueryUIDemo\bin\EntityFramework.xml
+E:\Bipin\jQuery Book\9781430263043_Chapter_10\jQueryUIDemo\bin\EntityFramework.SqlServer.xml
+E:\Bipin\jQuery Book\9781430263043_Chapter_10\jQueryUIDemo\obj\Debug\jQueryUIDemo.dll
+E:\Bipin\jQuery Book\9781430263043_Chapter_10\jQueryUIDemo\obj\Debug\jQueryUIDemo.pdb
+E:\Bipin\jQuery Book\9781430263043_Chapter_10\jQueryUIDemo\obj\Debug\jQueryUIDemo.csprojResolveAssemblyReference.cache

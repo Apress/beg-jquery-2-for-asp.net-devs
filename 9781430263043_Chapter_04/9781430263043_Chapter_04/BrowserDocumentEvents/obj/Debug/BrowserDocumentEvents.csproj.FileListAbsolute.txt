@@ -1,0 +1,5 @@
+E:\Bipin\jQuery Book\9781430263043_Chapter_04\BrowserDocumentEvents\bin\BrowserDocumentEvents.dll.config
+E:\Bipin\jQuery Book\9781430263043_Chapter_04\BrowserDocumentEvents\bin\BrowserDocumentEvents.dll
+E:\Bipin\jQuery Book\9781430263043_Chapter_04\BrowserDocumentEvents\bin\BrowserDocumentEvents.pdb
+E:\Bipin\jQuery Book\9781430263043_Chapter_04\BrowserDocumentEvents\obj\Debug\BrowserDocumentEvents.dll
+E:\Bipin\jQuery Book\9781430263043_Chapter_04\BrowserDocumentEvents\obj\Debug\BrowserDocumentEvents.pdb

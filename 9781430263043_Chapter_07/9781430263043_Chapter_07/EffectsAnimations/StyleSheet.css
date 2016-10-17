@@ -1,0 +1,12 @@
+﻿body {
+}
+
+.Panel {
+    border:2px solid orange;
+    padding:10px;
+    width:300px;
+    font-family:Arial;
+    font-size:12px;
+    line-height:21px;
+    background-color:yellow;
+}

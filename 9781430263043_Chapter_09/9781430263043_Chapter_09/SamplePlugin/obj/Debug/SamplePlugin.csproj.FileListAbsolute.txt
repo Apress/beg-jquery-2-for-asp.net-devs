@@ -1,0 +1,5 @@
+E:\Bipin\jQuery Book\9781430263043_Chapter_09\SamplePlugin\bin\SamplePlugin.dll.config
+E:\Bipin\jQuery Book\9781430263043_Chapter_09\SamplePlugin\bin\SamplePlugin.dll
+E:\Bipin\jQuery Book\9781430263043_Chapter_09\SamplePlugin\bin\SamplePlugin.pdb
+E:\Bipin\jQuery Book\9781430263043_Chapter_09\SamplePlugin\obj\Debug\SamplePlugin.dll
+E:\Bipin\jQuery Book\9781430263043_Chapter_09\SamplePlugin\obj\Debug\SamplePlugin.pdb

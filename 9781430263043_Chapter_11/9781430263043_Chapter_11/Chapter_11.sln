@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AjaxPagingDemo", "AjaxPagingDemo\AjaxPagingDemo.csproj", "{18961591-4795-4374-818D-0891BA1D5025}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutocompleteTextBoxDemo", "AutocompleteTextBoxDemo\AutocompleteTextBoxDemo.csproj", "{FC5B0E15-5C60-46B9-82F1-E265A0434022}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CascadingDropDownListDemo", "CascadingDropDownListDemo\CascadingDropDownListDemo.csproj", "{22950A4A-90F3-431A-981B-999EF6665655}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridViewRecipes", "GridViewRecipes\GridViewRecipes.csproj", "{05EF416C-468C-44E0-9958-698ADECBC0A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jQueryFileUploadDemo", "jQueryFileUploadDemo\jQueryFileUploadDemo.csproj", "{1ABD4D7B-9B1F-4A9C-A5FE-A7802FF742A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18961591-4795-4374-818D-0891BA1D5025}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18961591-4795-4374-818D-0891BA1D5025}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18961591-4795-4374-818D-0891BA1D5025}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18961591-4795-4374-818D-0891BA1D5025}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC5B0E15-5C60-46B9-82F1-E265A0434022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC5B0E15-5C60-46B9-82F1-E265A0434022}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC5B0E15-5C60-46B9-82F1-E265A0434022}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC5B0E15-5C60-46B9-82F1-E265A0434022}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22950A4A-90F3-431A-981B-999EF6665655}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22950A4A-90F3-431A-981B-999EF6665655}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22950A4A-90F3-431A-981B-999EF6665655}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22950A4A-90F3-431A-981B-999EF6665655}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05EF416C-468C-44E0-9958-698ADECBC0A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05EF416C-468C-44E0-9958-698ADECBC0A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05EF416C-468C-44E0-9958-698ADECBC0A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05EF416C-468C-44E0-9958-698ADECBC0A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ABD4D7B-9B1F-4A9C-A5FE-A7802FF742A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ABD4D7B-9B1F-4A9C-A5FE-A7802FF742A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ABD4D7B-9B1F-4A9C-A5FE-A7802FF742A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ABD4D7B-9B1F-4A9C-A5FE-A7802FF742A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

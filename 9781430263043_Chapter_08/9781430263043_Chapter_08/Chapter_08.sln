@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallingActionMethodUsingAjax", "CallingActionMethodUsingAjax\CallingActionMethodUsingAjax.csproj", "{AC6A77D9-1E1D-48B7-8C75-19441EED2F90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallingASMXUsingAjax", "CallingASMXUsingAjax\CallingASMXUsingAjax.csproj", "{041C9F87-9A2B-4DBA-BAF6-63D2A68B1093}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallingPageMethodsUsingAjax", "CallingPageMethodsUsingAjax\CallingPageMethodsUsingAjax.csproj", "{D1A41FBD-BA5C-4D9F-9711-F78D1BD74056}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallingWCFUsingAjax", "CallingWCFUsingAjax\CallingWCFUsingAjax.csproj", "{34A2519A-CF53-4583-9D24-DF90FBD2DCE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallingWebAPIUsingAjax", "CallingWebAPIUsingAjax\CallingWebAPIUsingAjax.csproj", "{3B52BCCF-B66A-4937-B729-281C549990BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSONBasics", "JSONBasics\JSONBasics.csproj", "{81150737-9D52-4F8E-89E3-1A8B3630BE71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC6A77D9-1E1D-48B7-8C75-19441EED2F90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC6A77D9-1E1D-48B7-8C75-19441EED2F90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC6A77D9-1E1D-48B7-8C75-19441EED2F90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC6A77D9-1E1D-48B7-8C75-19441EED2F90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{041C9F87-9A2B-4DBA-BAF6-63D2A68B1093}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{041C9F87-9A2B-4DBA-BAF6-63D2A68B1093}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{041C9F87-9A2B-4DBA-BAF6-63D2A68B1093}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{041C9F87-9A2B-4DBA-BAF6-63D2A68B1093}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1A41FBD-BA5C-4D9F-9711-F78D1BD74056}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1A41FBD-BA5C-4D9F-9711-F78D1BD74056}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1A41FBD-BA5C-4D9F-9711-F78D1BD74056}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1A41FBD-BA5C-4D9F-9711-F78D1BD74056}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34A2519A-CF53-4583-9D24-DF90FBD2DCE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34A2519A-CF53-4583-9D24-DF90FBD2DCE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34A2519A-CF53-4583-9D24-DF90FBD2DCE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34A2519A-CF53-4583-9D24-DF90FBD2DCE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B52BCCF-B66A-4937-B729-281C549990BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B52BCCF-B66A-4937-B729-281C549990BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B52BCCF-B66A-4937-B729-281C549990BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B52BCCF-B66A-4937-B729-281C549990BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81150737-9D52-4F8E-89E3-1A8B3630BE71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81150737-9D52-4F8E-89E3-1A8B3630BE71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81150737-9D52-4F8E-89E3-1A8B3630BE71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81150737-9D52-4F8E-89E3-1A8B3630BE71}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

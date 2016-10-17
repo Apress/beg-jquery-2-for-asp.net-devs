@@ -1,0 +1,5 @@
+E:\Bipin\jQuery Book\9781430263043_Chapter_08\CallingWCFUsingAjax\bin\CallingWCFUsingAjax.dll.config
+E:\Bipin\jQuery Book\9781430263043_Chapter_08\CallingWCFUsingAjax\bin\CallingWCFUsingAjax.dll
+E:\Bipin\jQuery Book\9781430263043_Chapter_08\CallingWCFUsingAjax\bin\CallingWCFUsingAjax.pdb
+E:\Bipin\jQuery Book\9781430263043_Chapter_08\CallingWCFUsingAjax\obj\Debug\CallingWCFUsingAjax.dll
+E:\Bipin\jQuery Book\9781430263043_Chapter_08\CallingWCFUsingAjax\obj\Debug\CallingWCFUsingAjax.pdb

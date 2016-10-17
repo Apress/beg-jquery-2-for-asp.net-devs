@@ -1,0 +1,49 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="../../Scripts/jquery-2.0.3.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#Button1").click(function (evt) {
+                var options = {};
+                options.url = "/Home/ConvertSimpleType";
+                options.type = "POST";
+                options.data = JSON.stringify({ t: $("#TextBox1").val(), scale: $("#DropDownList1").val() });
+                options.contentType = "application/json";
+                options.dataType = "json";
+                options.success = function (data) {
+                    if ($("#DropDownList1").val() == "C") {
+                        $("#lblResult").html("Value in Fahrenheit = " + data);
+                    }
+                    else {
+                        $("#lblResult").html("Value in Celsius = " + data);
+                    }
+                };
+                options.error = function (jqXHR, status, err) { alert(status); };
+                $.ajax(options);
+            });
+        });
+    </script>
+</head>
+<body>
+    <form id="form1">
+        <span id="Label1">Enter Temperature : </span>
+        <br />
+        <input type="text" id="TextBox1" />
+        <select id="DropDownList1">
+            <option value="C">Celsius</option>
+            <option value="F">Fehrenheit</option>
+        </select>
+        <br />
+        <input id="Button1" type="button" value="Convert" />
+        <br />
+        <span id="lblResult" style="font-weight:bold;color:red"></span>
+    </form>
+</body>
+</html>

@@ -1,0 +1,6 @@
+E:\Bipin\jQuery Book\9781430263043_Chapter_05\ManipulatingDOM\bin\ManipulatingDOM.dll.config
+E:\Bipin\jQuery Book\9781430263043_Chapter_05\ManipulatingDOM\bin\ManipulatingDOM.dll
+E:\Bipin\jQuery Book\9781430263043_Chapter_05\ManipulatingDOM\bin\ManipulatingDOM.pdb
+E:\Bipin\jQuery Book\9781430263043_Chapter_05\ManipulatingDOM\obj\Debug\ManipulatingDOM.csprojResolveAssemblyReference.cache
+E:\Bipin\jQuery Book\9781430263043_Chapter_05\ManipulatingDOM\obj\Debug\ManipulatingDOM.dll
+E:\Bipin\jQuery Book\9781430263043_Chapter_05\ManipulatingDOM\obj\Debug\ManipulatingDOM.pdb

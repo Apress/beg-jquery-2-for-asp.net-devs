@@ -1,0 +1,22 @@
+﻿body {
+    padding:10px;
+    font-size:20px;
+    margin-top:20px;
+}
+
+.InfoBar
+{
+    background-color: silver;
+    color: #333333;
+    font-weight: bold;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    border-bottom-width: 2px;
+    border-bottom-color: #666666;
+    border-bottom-style: solid;
+    text-align:center;
+    padding:10px;
+}

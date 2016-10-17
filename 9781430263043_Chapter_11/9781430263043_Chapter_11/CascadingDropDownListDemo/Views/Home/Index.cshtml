@@ -1,0 +1,52 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="../../Scripts/jquery-2.0.3.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#state").prop("disabled", true);
+
+            $("#country").change(function () {
+                if ($("#country").val() != "-1") {
+                    var options = {};
+                    options.url = "/home/getstates";
+                    options.type = "POST";
+                    options.data = JSON.stringify({ countryid: $("#country").val() });
+                    options.dataType = "json";
+                    options.contentType = "application/json";
+                    options.success = function (states) {
+                        $("#state").empty();
+                        for (var i = 0; i < states.length; i++) {
+                            $("#state").append("<option value='" + states[i].StateId + "'>" + states[i].StateName + "</option>");
+                        }
+                        $("#state").prop("disabled", false);
+                    };
+                    options.error = function () { alert("Error retrieving states!"); };
+                    $.ajax(options);
+                }
+                else {
+                    $("#state").empty();
+                    $("#state").prop("disabled", true);
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    @using(Html.BeginForm("ProcessForm","Home",FormMethod.Post)){
+    <div>Select Country :</div>
+    @Html.DropDownList("country", ViewData["countries"] as SelectList)
+    <br /><br />
+    <div>Select States :</div>
+    <select id="state"></select>
+    }
+</body>
+</html>

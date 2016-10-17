@@ -1,0 +1,29 @@
+﻿.NormalCounter
+{
+    font-family:Arial;
+    font-size:25px;
+    color:Navy;
+}
+
+.WarningCounter
+{
+    font-family:Arial;
+    font-size:25px;
+    color:Red;
+}
+
+.SpecialKeysOn
+{
+    font-family:'Courier New';
+    font-size:15px;
+    color:red;
+    font-weight:bold;
+}
+
+.SpecialKeysOff
+{
+    font-family:'Courier New';
+    font-size:15px;
+    color:#808080;
+    font-weight:bold;
+}
